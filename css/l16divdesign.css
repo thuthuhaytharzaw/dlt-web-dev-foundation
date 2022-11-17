@@ -1,0 +1,60 @@
+.firstdiv{
+	width: 200px;
+	height: 200px;
+	/*background-color: green;*/
+	/*background-color: #c2f542;*/
+	/*background-color: green;*/
+
+	/*background: green;*/
+	background: hotpink;
+	/*background: green;*/
+
+	color: #fff;
+	font-size: 20px;
+
+
+}
+
+.seconddiv{
+	width: 500px;
+	height: 500px;
+	background-image: url('../img/coverphoto/cat1.jpg');
+
+	background-position: center;
+
+	background-repeat: no-repeat;
+	border: 1px solid darkred;
+
+	color: white;
+}
+
+.divthree{
+	width: 300px;
+	height: 300px;
+	border: 2px solid red;
+
+	/*background: linear-gradient(hotpink,whitesmoke,lightslategray,skyblue);*/
+
+	background: radial-gradient(hotpink,skyblue,lightpink,cadetblue);
+}
+
+.divfour{
+	widthL: 200px;
+	height: 300px;
+	border: 2px solid deeppink;
+
+	background-image:linear-gradient(rgba(127,236,127,0.1),rgba(126,236,232,0.1),rgba(255,166,232,0.1),rgba(255,225,0,0.1)), url('../img/coverphoto/cat1.jpg');
+}
+
+.divfive{
+	width: 300px;
+	height: 300px;
+	border: 2px solid deeppink;
+
+	background:linear-gradient(
+		45deg,
+		rgba(127,236,127,1),
+		rgba(126,236,232,1),
+		rgba(255,166,232,1),
+		rgba(255,225,0,1))
+}

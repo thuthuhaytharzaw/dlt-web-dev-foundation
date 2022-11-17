@@ -1,0 +1,47 @@
+/*Variable*/
+
+:root{
+	--vl: violet;
+	--sb: skyblue;
+	--hp: hotpink;
+}
+.div1{
+	width: 100px;
+	height: 100px;
+	background-color: coral;
+
+	float: left;
+
+}
+
+.div2{
+	width: 200px;
+	height: 200px;
+	background-color: var(--vl);
+
+	float:  left;
+}
+
+.div3{
+	width: 300px;
+	height: 300px;
+	background-color: var(--sb);
+
+	float:  left;
+}
+
+.div4{
+	width: 400px;
+	height: 400px;
+	background-color: rebeccapurple;
+
+	float: left;
+}
+
+.div5{
+	width: 500px;
+	height: 500px;
+	background-color: var(--hp);
+
+	float: left;
+}

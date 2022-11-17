@@ -1,0 +1,108 @@
+	@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Stick&display=swap');
+
+
+/*variable*/
+:root{
+	--wcc: #f4f4f4;
+	--gyc: #777;
+	--dbc: #2027a8;
+}
+
+
+
+/*form htel ka box arr lone size nyi say phoz use dr*/
+/* universal selector =*  */
+*{
+	box-sizing: border-box;
+}
+
+
+
+body{
+	font-family: 'Stick', sans-serif;
+
+/* vh = viewport heigth = lat shi myin nay ya dae device yae height */
+	height: 100vh; 
+
+
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+
+	/*no scroll*/
+	/*margin: 0*/
+	overflow: hidden;
+
+}
+
+
+.container{
+	width: 480px;
+	background-color:var(--wcc);
+
+	/*h v b c*/
+	box-shadow: 0 2px 15px rgba(0,0,0,3);
+
+}
+
+.container h2{
+	text-align: center;
+	margin-bottom: 0;
+}
+
+
+.container .form{
+	/*top&botto left&right*/
+	padding: 30px 40px;
+}
+
+/* vh =! % , % ka element yae asone ko u dl */
+
+
+.form .form-group{
+	padding-bottom: 20px;
+	/*margin-bottom: 30px;*/
+}
+
+
+.form-group label{
+	display: block;
+	color: var(--gyc); /*label text grey*/
+	margin-bottom: 5px;
+}
+
+.form-group .form-control{
+	font-family: 'Stick', sans-serif;
+	width: 100%;
+	padding: 10px;
+
+	color: red;
+}
+
+.form-group .form-control::placeholder{
+    color: rgba(0, 0, 0, 1.0);
+}
+
+.form .btm{
+	font-family: inherit;
+	width: 100%;
+	background-color: var(--dbc);
+	color: #fff;
+	font-size: 16px;
+	padding: 10px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+
+	transition: all 0.5s;
+}
+
+.form .btm:hover{
+	background-color: orange;
+}
+
+.form .btm:active{
+	background-color: green;
+}

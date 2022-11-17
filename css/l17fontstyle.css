@@ -1,0 +1,136 @@
+/*Universal Selector*/
+*{
+	cursor: pointer;
+}
+
+
+ /*1.Local Font Integrate*/
+   /*i.Local Machine Integrate*/
+   /*ii.Project Folder Integrate*/
+/*.p1{
+	font-family:Blackadder ITC ;
+}
+
+.p2{
+	font-family:Century, Arial,"Time New Roman";
+}*/
+
+
+
+
+
+/*Global Font Integrate*/
+/*.p1{
+	font-family: 'Shizuru', cursive;
+}
+
+.p2{
+	font-family: 'Shizuru', cursive;
+}
+
+.p3{
+	font-family: 'Stick', sans-serif;
+}*/
+
+/*at-rules*/
+/*for = stick*/
+@font-face{
+	font-family: Stick;
+	src:local('Stick-Regular') ,url('../libs/fonts/stick/Stick-Regular.ttf')format('woff');
+}
+
+/*for = akaya*/
+@font-face{
+	font-family: 'akaya';
+	src: local('AkayaTelivigala-Regular') ,url('../libs/fonts/akayatelivigala/AkayaTelivigala-Regular.ttf')format('woff');
+}
+/*
+body{
+	fonkt-family: 'Stick', sans-serif;
+}*/
+
+.p2{
+	font-family:'akaya' ;
+}
+
+.p4{
+	font-family: Arial,Century;
+
+	/*font-weight: bold;*/
+	/*font-weight: bolder;*/
+   /*font-weight: 900;*/
+
+   /*font-style: italic;*/
+
+   /*text-transform: uppercase;*/
+   /*text-transform: lowercase;*/
+   text-transform: capitalize;
+
+   /*Text Indentation*/
+   text-indent: 50px;
+}
+
+k{
+	text-decoration: none;
+	/*color: green;*/
+	}
+
+.clickme:visited{
+	color: green;
+
+}
+.clickme:hover{
+	color: darkred;
+	font-size: 20px;
+	text-transform: capitalize;
+
+  transition: all 2s;
+
+}
+
+.menutext{
+	font-family: Cambria;
+	text-decoration: none;
+	background-color: green;
+	color: white;
+
+	/*padding: 10px;*/
+  
+         /*top bottom left right*/
+	/*padding: 10px 30px;*/
+
+            /*top right bottom left*/
+	/*padding: 10px 20px 30px 40px;*/
+
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 20px;
+	padding-left: 20px;
+
+	border-radius: 10px;
+
+	/*transition: all 1s;*/
+
+	/*transition: background-color 5s;*/
+   
+  transition: background-color 2s,color 5s;
+}
+
+.menutext:hover{
+	background-color: orange;
+	color: black;
+}
+
+.imgdesign{
+	width: 80px;
+	height: 80px;
+
+	cursor: pointer;
+
+	transition: all 2s;
+}
+
+.imgdesign:hover{
+	width: 100px;
+	height: 100px;
+}

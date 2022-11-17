@@ -1,0 +1,134 @@
+.container1 .circle1{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background: conic-gradient(
+         aqua,
+         aquamarine,
+         chartreuse,
+         hotpink
+	);
+
+}
+
+.container1 .circle2{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background: conic-gradient(
+         #f5ef42,
+         #9ef542,
+         #42f5b3,
+         #42e3f5
+	);
+
+}
+
+.container1 .circle3{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background: conic-gradient(
+		rgba(127,127,254,1.00),
+		rgba(228,127,255,1.00),
+        rgba(228,255,84,1.00),
+        rgba(228,105,84,1.00)
+	);
+
+}
+
+.container1 .circle4{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background: conic-gradient(
+		chartreuse 40%,
+		orchid 10% ,
+		black  
+		
+	);
+
+}
+
+.container2{
+	width: 600px;
+	height: 300px;
+	background-color: aqua;
+
+	display: flex;
+	justify-content: center;/*hz center*/
+	align-items: center;/*/*vt center*/
+
+	position: relative;
+}
+
+.container2 .c1{
+	width: 300px;
+	height: 300px;
+	background: linear-gradient(red,orange);
+	background-color: hotpink;
+	border-radius: 50%;
+
+	position: absolute;
+
+	z-index: 1;
+}
+
+.container2 .c2{
+	width: 320px;
+	height: 320px;
+	background: conic-gradient(
+        red,
+        violet 30%,
+        red 0%,
+        blue 70%,
+        red 0%,
+        yellow
+	);	
+
+	border-radius: 50%;
+
+	position: absolute;
+
+	z-index: 0;
+}
+
+.pointercontainer{
+	width: 20px;
+	height: 200px;
+	/*background-color: gray;*/
+
+	position: absolute;
+	top: -50px;
+
+
+	z-index: 2;
+
+	animation-name: myani;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+
+	transform-origin: bottom;
+}
+
+.pointer{
+	width: 20px;
+	height: 20px;
+	background-color: red;
+
+	border-radius: 50%;
+
+	display: block;
+}
+
+@keyframes myani{
+	from{
+		transform: rotate(0deg);
+	}
+
+	to{
+		/*transform: rotate(-360deg);*/
+		transform: rotate(-360deg);
+	}
+}
