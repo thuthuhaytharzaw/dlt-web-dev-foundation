@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Date And Time</title>
+</head>
+<body>
+
+	<p>Copyright <span  id="time"></span> Eleven Media Group CO., Ltd.All right reserved.</p>
+
+	<script type="text/javascript">
+		
+
+		let date = new Date();
+		console.log(date);
+
+		// let getdate = new Date() .getDate();
+		let getdate = new Date().getDate();
+		console.log(getdate);
+
+
+		let hour = new Date().getHours();
+		console.log(`this is hours = ${hour}`);
+
+		let minute = new Date().getMinutes();
+		console.log(`this is minutes = ${minute}`);
+
+		let seconds = new Date().getSeconds();
+		console.log(`this is seconds = ${seconds}`);
+                          
+
+                   // 1s = 1000ms
+                   // 1 jan 1970 > upnow
+		let time = new Date().getTime();
+		console.log(`this is time = ${time}`);
+		let now = Date.now();
+		console.log(`this is now = ${now}`);
+
+
+
+        // return index number January is 0 / December is 11
+		let month = date.getMonth();
+		console.log(`this is month ${month}`);
+
+
+		let day = date.getDay();
+		console.log(`this is day ${day} `);
+
+		let year = date.getFullYear();
+		console.log(`this is year ${year}`)
+
+		let utcyear = date.getUTCFullYear();
+		console.log(`this is utcyear ${utcyear}`);
+
+
+		document.getElementById('time').textContent = utcyear;
+
+        
+
+        // m d y hr:m:s
+		let birthday = new Date('8-10--2003');
+		birthday = new Date('8-10-2003 11:35:00');
+		birthday = new Date('Aug 10 2003');
+		birthday = new Date('Augest 10 2003 11:00:00');
+		birthday = new Date('8/10/2005');
+
+		console.log(birthday);
+
+
+
+		birthday.setMonth(2);
+		birthday.setDate(12);
+		birthday.setFullYear(2003);
+		
+		birthday.setHours(13);
+		birthday.setMinutes(30);
+		birthday.setSeconds(50);
+		console.log(birthday);
+
+	</script>
+
+</body>
+</html>
+
+
+<!-- number
+string
+boolean
+object = date object
+object = array -->
+
+
+<!-- closet
+index number
+[0,1,2,3,4,5,6,7,8,9,10,11,12]
+[jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec] -->
